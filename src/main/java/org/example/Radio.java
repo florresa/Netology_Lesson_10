@@ -1,10 +1,10 @@
 package org.example;
 
 public class Radio {
-    public int stationNumber;
-    public int currentStationNumber;
-    public int volume;
-    public int currentVolume;
+    private int stationNumber;
+    private int currentStationNumber;
+    private int volume;
+    private int currentVolume;
 
     public int getCurrentStationNumber() {
         return currentStationNumber;
