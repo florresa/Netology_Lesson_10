@@ -1,36 +1,39 @@
 package org.example;
 
 public class Radio {
-    private int stationNumber;
     private int currentStationNumber;
-    private int volume;
     private int currentVolume;
+    private int stationQuantity = 10;
 
+    public Radio (int stationQuantity) {
+        this.stationQuantity = stationQuantity;
+    }
+    public Radio () {
+
+    }
     public int getCurrentStationNumber() {
         return currentStationNumber;
     }
     public void setCurrentStationNumber(int newCurrentStationNumber) {
-        if (newCurrentStationNumber < 0 || newCurrentStationNumber > 9) {
+        if (newCurrentStationNumber < 0 || newCurrentStationNumber > stationQuantity - 1) {
             return;
         } else {
             currentStationNumber = newCurrentStationNumber;
         }
     }
-
     public void next() {
-        if (currentStationNumber < 9) {
-            currentStationNumber = currentStationNumber + 1;
+        if (currentStationNumber == stationQuantity - 1) {
+            currentStationNumber = 0;
         }
-        if (currentStationNumber == 9) {
-            return;
+        else {
+            currentStationNumber = currentStationNumber + 1;
         }
     }
     public void prev() {
-        if (currentStationNumber > 0) {
-            currentStationNumber = currentStationNumber - 1;
-        }
         if (currentStationNumber == 0) {
-            return;
+            currentStationNumber = stationQuantity - 1;
+        } else {
+            currentStationNumber = currentStationNumber - 1;
         }
     }
 
@@ -40,7 +43,7 @@ public class Radio {
     public void setCurrentVolume(int newCurrentVolume) {
         if (newCurrentVolume < 0) {
             return;
-        } else if (newCurrentVolume > 10) {
+        } else if (newCurrentVolume > 100) {
             return;
         } else {
             currentVolume = newCurrentVolume;
@@ -48,10 +51,10 @@ public class Radio {
     }
 
     public void nextVolume() {
-        if (currentVolume < 10) {
+        if (currentVolume < 100) {
             currentVolume = currentVolume + 1;
         }
-        if (currentVolume == 10) {
+        if (currentVolume == 100) {
             return;
         }
     }
@@ -63,4 +66,5 @@ public class Radio {
             return;
         }
     }
+
 }
