@@ -13,6 +13,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetStationZero() {
         Radio radio = new Radio();
@@ -21,6 +22,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetStationOne() {
         Radio radio = new Radio();
@@ -29,6 +31,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetStationMiddle() {
         Radio radio = new Radio();
@@ -37,6 +40,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetStationEight() {
         Radio radio = new Radio();
@@ -45,6 +49,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetStationNine() {
         Radio radio = new Radio();
@@ -53,6 +58,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNotSetStationAboveMax() {
         Radio radio = new Radio();
@@ -61,6 +67,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStationTestBorderMinusOne() {
         Radio radio = new Radio();
@@ -70,6 +77,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStationTestBorderZero() {
         Radio radio = new Radio();
@@ -79,6 +87,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStationTestBorderOne() {
         Radio radio = new Radio();
@@ -88,6 +97,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStationTestMiddle() {
         Radio radio = new Radio();
@@ -97,6 +107,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStationTestBorderEight() {
         Radio radio = new Radio();
@@ -106,6 +117,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStationTestBorderNine() {
         Radio radio = new Radio();
@@ -115,6 +127,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStationTestBorderTen() {
         Radio radio = new Radio();
@@ -124,8 +137,9 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
-    public void prevStationTestBorderMunusOne(){
+    public void prevStationTestBorderMunusOne() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(-1);
         radio.prev();
@@ -133,6 +147,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevStationTestBorderZero() {
         Radio radio = new Radio();
@@ -142,6 +157,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevStationTestBorderOne() {
         Radio radio = new Radio();
@@ -151,6 +167,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevStationTestMiddle() {
         Radio radio = new Radio();
@@ -160,6 +177,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevStationTestBorderEight() {
         Radio radio = new Radio();
@@ -169,6 +187,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevStationTestBorderNine() {
         Radio radio = new Radio();
@@ -178,6 +197,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevStationTestBorderTen() {
         Radio radio = new Radio();
@@ -187,6 +207,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrShouldNotSetStationBelowMin() {
         Radio radio = new Radio(31);
@@ -195,6 +216,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrShouldSetStationBorderZero() {
         Radio radio = new Radio(31);
@@ -203,6 +225,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrShouldSetStationBorderOne() {
         Radio radio = new Radio(31);
@@ -211,6 +234,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrShouldSetStationMiddle() {
         Radio radio = new Radio(31);
@@ -219,6 +243,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrShouldSetStationBorderTwentyNine() {
         Radio radio = new Radio(31);
@@ -227,6 +252,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrShouldSetStationBorderThirty() {
         Radio radio = new Radio(31);
@@ -235,6 +261,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrShouldSetStationBorderThirtyOne() {
         Radio radio = new Radio(31);
@@ -243,6 +270,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrNextStationTestBorderMinusOne() {
         Radio radio = new Radio(31);
@@ -252,6 +280,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrNextStationTestBorderZero() {
         Radio radio = new Radio(31);
@@ -261,6 +290,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrNextStationTestBorderOne() {
         Radio radio = new Radio(31);
@@ -270,6 +300,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrNextStationTestMiddle() {
         Radio radio = new Radio(31);
@@ -279,6 +310,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrNextStationTestBorderTwentyNine() {
         Radio radio = new Radio(31);
@@ -288,6 +320,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrNextStationTestBorderThirty() {
         Radio radio = new Radio(31);
@@ -297,6 +330,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrNextStationTestBorderThirtyOne() {
         Radio radio = new Radio(31);
@@ -306,8 +340,9 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
-    public void constrPrevStationTestBorderMunusOne(){
+    public void constrPrevStationTestBorderMunusOne() {
         Radio radio = new Radio(31);
         radio.setCurrentStationNumber(-1);
         radio.prev();
@@ -315,6 +350,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrPrevStationTestBorderZero() {
         Radio radio = new Radio(31);
@@ -324,6 +360,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrPrevStationTestBorderOne() {
         Radio radio = new Radio(31);
@@ -333,6 +370,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrPrevStationTestMiddle() {
         Radio radio = new Radio(31);
@@ -342,6 +380,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrPrevStationTestBorderTwentyNine() {
         Radio radio = new Radio(31);
@@ -351,6 +390,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrPrevStationTestBorderThirty() {
         Radio radio = new Radio(31);
@@ -360,6 +400,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void constrPrevStationTestBorderThirtyOne() {
         Radio radio = new Radio(31);
@@ -369,6 +410,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNotSetVolumeBelowMin() {
         Radio radio = new Radio();
@@ -377,6 +419,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetVolumeZero() {
         Radio radio = new Radio();
@@ -385,6 +428,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetVolumeOne() {
         Radio radio = new Radio();
@@ -393,6 +437,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetVolumeMiddle() {
         Radio radio = new Radio();
@@ -401,6 +446,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetVolumeNinetyNine() {
         Radio radio = new Radio();
@@ -409,7 +455,8 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
-        @Test
+
+    @Test
     public void shouldSetVolumeOneHundred() {
         Radio radio = new Radio();
         radio.setCurrentVolume(100);
@@ -417,6 +464,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNotSetVolumeAboveMax() {
         Radio radio = new Radio();
@@ -425,6 +473,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextVolumeTestBorderMinusOne() {
         Radio radio = new Radio();
@@ -434,6 +483,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextVolumeTestBorderZero() {
         Radio radio = new Radio();
@@ -443,6 +493,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextVolumeTestBorderOne() {
         Radio radio = new Radio();
@@ -452,6 +503,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextVolumeTestMiddle() {
         Radio radio = new Radio();
@@ -461,6 +513,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextVolumeTestBorderNinetyNine() {
         Radio radio = new Radio();
@@ -470,6 +523,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextVolumeTestBorderOneHundred() {
         Radio radio = new Radio();
@@ -479,6 +533,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextVolumeTestBorderOneHundredAndOne() {
         Radio radio = new Radio();
@@ -488,6 +543,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevVolumeTestBorderMinusOne() {
         Radio radio = new Radio();
@@ -497,6 +553,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevVolumeTestBorderZero() {
         Radio radio = new Radio();
@@ -506,6 +563,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevVolumeTestBorderOne() {
         Radio radio = new Radio();
@@ -515,6 +573,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevVolumeTestMiddle() {
         Radio radio = new Radio();
@@ -524,6 +583,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevVolumeTestBorderNinetyNine() {
         Radio radio = new Radio();
@@ -533,6 +593,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevVolumeTestBorderOneHundred() {
         Radio radio = new Radio();
@@ -542,6 +603,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevVolumeTestBorderOneHundredAndOne() {
         Radio radio = new Radio();
